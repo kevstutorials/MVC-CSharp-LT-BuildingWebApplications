@@ -1,0 +1,27 @@
+﻿<!--Directive to ListingModel-->
+@model List<ListPlus.Web.Models.ListingModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div> 
+        List
+        <ul>
+            <!--Looping through all item titles-->
+            @foreach (var item in Model)
+            {
+                <li>@item.Title</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

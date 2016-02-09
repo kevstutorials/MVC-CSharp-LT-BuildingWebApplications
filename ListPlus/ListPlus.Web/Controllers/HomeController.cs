@@ -13,5 +13,10 @@ namespace ListPlus.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult IndexLayout()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        This is the layout page
+        <!--Render The Body-->
+        @RenderBody()
+    </div>
+    <!--Render The Footer-->
+    @RenderSection("footer", false)
+    @if(!IsSectionDefined("footer"))
+    {
+        @: This is a manual footer
+    }
+</body>
+</html>
